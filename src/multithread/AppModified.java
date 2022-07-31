@@ -21,8 +21,8 @@ public class AppModified {
     public static class NewThread extends Thread {
         @Override
         public void run() {
-            System.out.println("Current thread " + Thread.currentThread().getName() +
-                    " priority " + Thread.currentThread().getPriority());
+            System.out.println("Current thread " + this.getName() +
+                    " priority " + this.getPriority());
         }
     }
 }
